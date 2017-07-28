@@ -1,4 +1,6 @@
 
+
+
 <div class="container rooms">
   <div class="row">
     <div class="col-sm-12">
@@ -23,6 +25,10 @@
                 <div class="number">
                   <div class="number-value"><%= room.guests %></div>
                   <div class="number-label">Huéspedes</div>
+                </div>
+                <div class="number">
+                  <div class="number-value"><%= room.price_per_night %></div>
+                  <div class="number-label">Price per Night</div>
                 </div>
                 <div class="actions">
                   <%= link_to "<span class='glyphicon glyphicon-pencil'><span>".html_safe, edit_room_path(room), class: "edit-room-btn" %>
